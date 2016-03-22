@@ -20,7 +20,7 @@ public class MyOpenHelper extends SQLiteOpenHelper {
     private static final String create_food_table = "create table foodTABLE (" +
             "_id integer primary key," +
             "Food text," +
-            "price text," +
+            "Price text," +
             "Source text);";//การสร้างตาราง foodTABLE
 
 

@@ -32,6 +32,13 @@ public class MainActivity extends AppCompatActivity {
 
        //ทำปุ่ม
         buttonController();
+        // tester add valus
+        tester();
+    }
+
+    private void tester() {
+        myManage.addValueToSQLite(1, "user", "pass", "name");
+        myManage.addValueToSQLite(2, "food", "price", "source");
     }
 
     private void buttonController() {
