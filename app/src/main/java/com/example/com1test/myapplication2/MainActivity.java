@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText passwordEditText;
     private Button loginButton;
     private String userString , passwordSting;
-
+    private MyManage myManage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         bindWidget();
+        //request database การดึง database
+        myManage = new MyManage(this);
+
        //ทำปุ่ม
         buttonController();
     }
